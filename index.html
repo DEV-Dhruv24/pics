@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Editor</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">PHOTO EDITOR MOD</h1>
+        
+        <!-- Image Upload -->
+        <div class="form-group">
+            <input type="file" id="imageInput" class="form-control-file">
+        </div>
+
+        <!-- Editor Controls -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="brightness">Brightness:</label>
+                    <input type="range" id="brightness" class="form-control-range" min="0" max="200" value="100">
+                </div>
+                <div class="form-group">
+                    <label for="contrast">Contrast:</label>
+                    <input type="range" id="contrast" class="form-control-range" min="0" max="200" value="100">
+                </div>
+                <div class="form-group">
+                    <label for="blur">Blur:</label>
+                    <input type="range" id="blur" class="form-control-range" min="0" max="20" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="opacity">Opacity:</label>
+                    <input type="range" id="opacity" class="form-control-range" min="0" max="100" value="100">
+                </div>
+                <div class="form-group">
+                    <label for="hue">Hue Rotation:</label>
+                    <input type="range" id="hue" class="form-control-range" min="0" max="360" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="saturation">Saturation:</label>
+                    <input type="range" id="saturation" class="form-control-range" min="0" max="200" value="100">
+                </div>
+                <div class="form-group">
+                    <label for="sepia">Sepia:</label>
+                    <input type="range" id="sepia" class="form-control-range" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="grayscale">Grayscale:</label>
+                    <input type="range" id="grayscale" class="form-control-range" min="0" max="100" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="invert">Invert:</label>
+                    <input type="range" id="invert" class="form-control-range" min="0" max="100" value="0">
+                </div>
+                <button id="autoEdit" class="btn btn-primary">Auto Edit</button>
+                <button id="reset" class="btn btn-secondary">Reset</button>
+                <button id="download" class="btn btn-success">Download</button>
+            </div>
+            <div class="col-md-8 text-center">
+                <img id="image" src="" alt="Pleas uplode image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
